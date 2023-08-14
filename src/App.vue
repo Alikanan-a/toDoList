@@ -32,7 +32,7 @@ watch(name, (newVal) => {
 })
 onMounted(() => {
   name.value = localStorage.getItem('name') || ''
-  todos.value = JSON.parse(localStorage.getItem('todos')) || []
+  todos.value = JSON.parse(localStorage.getItem('todos'))  ||  []
 })
 </script>
 
